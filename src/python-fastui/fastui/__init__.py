@@ -38,7 +38,7 @@ def prebuilt_html(title: str = ''):
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <script type="module" crossorigin src="{_PREBUILT_CDN_URL}/index.js"></script>
+<!--    <script type="module" crossorigin src="{_PREBUILT_CDN_URL}/index.js"></script>-->
     <link rel="stylesheet" crossorigin href="{_PREBUILT_CDN_URL}/index.css">
   </head>
   <body>

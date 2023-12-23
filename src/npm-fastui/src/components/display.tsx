@@ -55,6 +55,7 @@ const DisplayRender: FC<DisplayProps> = (props) => {
   } else if (typeof value === 'object' && value !== null) {
     return <DisplayObject type="DisplayObject" mode={mode} value={value} />
   } else {
+    //@ts-ignore
     return <DisplayPrimitive type="DisplayPrimitive" mode={mode} value={value} />
   }
 }
