@@ -2,8 +2,11 @@ import { FastUI, renderClassName } from 'fastui'
 import * as bootstrap from 'fastui-bootstrap'
 import { FC, ReactNode } from 'react'
 
+import { ThemeProvider, optoTheme} from "@optoinvest/opto-design-system"
+
 export default function App() {
   return (
+    <ThemeProvider theme={optoTheme}>
     <div className="top-offset">
       <FastUI
         rootUrl="/api"
@@ -14,6 +17,7 @@ export default function App() {
         Transition={Transition}
       />
     </div>
+    </ThemeProvider>
   )
 }
 
